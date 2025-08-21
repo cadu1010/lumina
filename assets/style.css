@@ -35,6 +35,9 @@ header{
     
     
 }
+.header .logo img{
+    width: 200px;
+}
 nav .menu-mobile{
     display: none;
     justify-content: space-between;
@@ -210,6 +213,24 @@ nav .menu-desktop  ul li:hover{
     justify-content: center;
     text-align: center;
     padding:25px 0;
+}
+#round-map{
+    min-height: 100vh;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding:25px 0;
+}
+#contact{
+    
+    min-height: 100vh;
+    background-color: #cce0da;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding:25px 0;
+
 }
 
 
