@@ -1,0 +1,251 @@
+*{
+    box-sizing: border-box;
+    font-family:'Inter', 'Poppins', Arial, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    
+    background-size: cover;
+}
+header{
+    background-color: #ffffff00;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    
+}
+.container{
+    max-width: 1250px;
+    width: 100%;
+    
+    margin: auto;
+    padding: 0 20px;
+    
+    
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+    
+}
+nav .menu-mobile{
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 40px;
+    height: 30px;
+    gap:5px;
+}
+nav .menu-mobile .item-menu{
+    height: 6px;
+    border-radius: 3px;
+    width: 40px;
+    background-color: white;
+}
+nav .menu-desktop ul{
+    display: flex;
+    justify-content:center ;
+    list-style: none;
+    gap: 15px;
+    
+
+}
+nav .menu-desktop ul li a{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 1px black;
+} 
+nav .menu-desktop  ul li:hover{
+    opacity: 0.8;
+}
+/* Section inicial */
+#home{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('image/Background1.jpg');
+    background-position:center;
+    background-size: cover;
+}
+#home .homepage{
+    width: 70%;
+
+}   
+#home .homepage h1{
+    font-size: 80px;
+    padding: 0;
+    margin-top: -35px;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+}
+.button{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    background-color: white;
+    padding: 18px 25px;
+    border-radius: 10px;
+    font-weight: 800;
+    box-shadow: 0px 0px 10px black;
+    
+}
+.button:hover{
+    background-color: rgb(211, 211, 211);
+}
+.button:active{
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+
+
+/* Section Problema */
+#solution {
+    min-height: 100vh;
+    padding:25px 0;
+    display: flex;
+    
+    background-color: #f4f7f6; 
+    text-align: center;
+    
+}
+.title-section{
+    padding: 40px 0;
+    font-size: 60px;
+    font-weight:700;
+    color: #0d2c4f;
+}
+.title-section.white{
+    color: white;
+}
+.section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap:25px;
+}
+
+.section-content {
+    
+    max-width: 900px;
+    text-align: center;
+    background-color: #ffffff; 
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.section-content h1 {
+    color: #0d2c4f; 
+    font-size: 36px;
+}
+
+.section-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+}
+
+
+ .section-content {
+    max-width: 700px; 
+   
+    background-color: #ffffff; 
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.section-content h1 {
+    color: #0d2c4f; 
+    font-size: 36px;
+    
+}
+.section-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+
+}
+
+.section-content .description .description-list ul{
+    list-style: none;
+    list-style-type: none;
+    padding-left: 0;
+    text-align: justify;
+    line-height: 1.6;
+
+}
+.section-content .description .description-list ul li{
+    margin-top: 2px;
+    
+}
+.section-content .description .description-list ul li img{
+    width: 18px;
+    
+    
+    
+}
+#differentials{
+    min-height: 100vh;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#bussness-model{
+    min-height: 100vh;
+    background-color: #5d5f8a;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+
+@media (max-width: 800px){
+
+    nav .menu-desktop{
+        display: none;
+    }
+    nav .menu-mobile{
+        display: flex;
+    }
+    #home .homepage{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #home .homepage h1{
+        font-size: 70px;
+        text-align: center;
+        margin-top: 70px;
+    }
+    .button{
+        width: 70%;
+        font-size: 20px;
+        text-align: center;
+        
+    }
+    #solution{
+        height: auto;
+    }
+    .section {
+        flex-direction: column;
+        align-items: center;
+    }
+   
+}
