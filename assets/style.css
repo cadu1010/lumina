@@ -133,7 +133,7 @@ nav .menu-desktop  ul li:hover{
 }
 
 .section-content {
-    
+    width: 100%;
     max-width: 900px;
     text-align: center;
     background-color: #ffffff; 
@@ -157,7 +157,7 @@ nav .menu-desktop  ul li:hover{
 
  .section-content {
     max-width: 700px; 
-   
+    flex:1;
     background-color: #ffffff; 
     padding: 40px;
     border-radius: 25px;
