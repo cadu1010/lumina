@@ -317,6 +317,9 @@ header.scrolled nav .menu-mobile .item-menu {
         display: flex;
         cursor: pointer;
     }
+    .section-content .description .description-list ul li{
+        flex-direction: column;
+}
 }
 @media (min-width: 801px) {
     #solution .section {
