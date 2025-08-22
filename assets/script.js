@@ -3,14 +3,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const menuDesktopList = document.querySelector('.menu-desktop ul');
 
     if (menuIcon && menuDesktopList) {
-        // Cria a estrutura do menu mobile
+        
         const mobileNavContainer = document.createElement('nav');
         mobileNavContainer.classList.add('menu-mobile-nav');
         
-        // Cria o botão de fechar
+       
         const closeBtn = document.createElement('div');
         closeBtn.classList.add('menu-close-btn');
-        closeBtn.innerHTML = '&times;'; // Adiciona um 'X'
+        closeBtn.innerHTML = '&times;'; 
         mobileNavContainer.appendChild(closeBtn);
 
         const mobileList = menuDesktopList.cloneNode(true);
@@ -21,17 +21,30 @@ document.addEventListener('DOMContentLoaded', function() {
             mobileNavContainer.classList.remove('open');
         }
 
-        // Adiciona evento para abrir/fechar o menu
+      
         menuIcon.addEventListener('click', () => {
             mobileNavContainer.classList.toggle('open');
         });
 
-        // Adiciona evento para fechar no botão 'X'
+        
         closeBtn.addEventListener('click', closeMenu);
 
-        // Adiciona evento para fechar o menu ao clicar em um link
+        
         mobileNavContainer.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', closeMenu);
         });
+    }
+});
+
+
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    const logoImg = document.getElementById('logo-img');
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+        logoImg.src = 'assets/image/Logo-Escura.png'; 
+    } else {
+        header.classList.remove('scrolled');
+        logoImg.src = 'assets/image/Logo-Clara.png'; 
     }
 });
