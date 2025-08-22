@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 *{
     box-sizing: border-box;
     font-family:'Inter', 'Poppins', Arial, sans-serif;
@@ -77,6 +80,7 @@ nav .menu-desktop  ul li:hover{
     background-image: url('image/Background1.jpg');
     background-position:center;
     background-size: cover;
+    padding-top: 70px;
 }
 #home .homepage{
     width: 70%;
@@ -214,7 +218,7 @@ nav .menu-desktop  ul li:hover{
     text-align: center;
     padding:25px 0;
 }
-#round-map{
+#roadmap{
     min-height: 100vh;
     background-color: #f4f7f6;
     display: flex;
@@ -279,4 +283,63 @@ nav .menu-desktop  ul li:hover{
    .title-section{
     font-size: 40px;
    }
+   nav .menu-mobile{
+        display: flex;
+        cursor: pointer;
+    }
+}
+
+
+/* --- Estilos do Menu Mobile --- */
+.menu-mobile-nav {
+    position: fixed;
+    top: 0;
+    right: -85vw; 
+    width: 80vw;
+    height: 100vh;
+    background-color: rgba(32, 38, 47, 0.95); 
+    z-index: 1000;
+    transition: right 0.4s ease-in-out;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.menu-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: white;
+    font-size: 45px;
+    cursor: pointer;
+    line-height: 1;
+}
+.menu-close-btn:hover {
+    opacity: 0.7;
+}
+
+.menu-mobile-nav.open {
+    right: 0; 
+}
+
+.menu-mobile-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 60px; /* Espaço para não sobrepor o botão de fechar */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-mobile-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 0;
+    display: block;
+}
+
+.menu-mobile-nav ul li a:hover {
+    opacity: 0.7;
 }
