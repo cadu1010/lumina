@@ -125,7 +125,7 @@ nav .menu-desktop  ul li:hover{
 
 /* Section Problema */
 #solution {
-    min-height: 100vh;
+    min-height: var(--altura-pagina);
     padding:25px 0;
     display: flex;
     
@@ -165,17 +165,8 @@ nav .menu-desktop  ul li:hover{
     box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.12); 
 }
 
-.section-content h1 {
-    color: #0d2c4f; 
-    font-size: 36px;
-}
 
-.section-content p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #333;
-    text-align: justify;
-}
+
 
 
  .section-content {
@@ -186,13 +177,13 @@ nav .menu-desktop  ul li:hover{
     border-radius: 25px;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
 }
-
 .section-content h1 {
     color: #0d2c4f; 
     font-size: 36px;
-    
 }
-.section-content p {
+
+
+.section-content .description {
     font-size: 18px;
     line-height: 1.6;
     color: #333;
@@ -208,13 +199,27 @@ nav .menu-desktop  ul li:hover{
 .section-content .description .description-list ul li{
     display: flex; 
     align-items: flex-start; 
-    gap: 15px; 
+    flex-direction: column;
+    gap: 10px; 
     margin-bottom: 15px; 
     line-height: 1.6;
 }
 .section-content .description .description-list ul li img{
-    width: 24px; 
-    margin-top: 4px; 
+    height:20px; 
+    
+}
+.section-content .description .description-list ul li .li-tilte-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+
+}
+.section-content .description .description-list ul li .li-tilte-image span{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
 }
 #differentials{
     min-height: var(--altura-pagina);
@@ -284,6 +289,7 @@ header.scrolled nav .menu-mobile .item-menu {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top:-30% ;
     }
     #home .homepage h1{
         font-size: 40px;
@@ -317,7 +323,7 @@ header.scrolled nav .menu-mobile .item-menu {
         display: flex;
         cursor: pointer;
     }
-    .section-content .description .description-list ul li{
+    .section-content .description .description-list.adjust-mobile ul li{
         flex-direction: column;
 }
 }
