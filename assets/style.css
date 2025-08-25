@@ -129,7 +129,7 @@ nav .menu-desktop  ul li:hover{
     padding:25px 0;
     display: flex;
     
-    background-color: #f4f7f6; 
+    background-color: #d4e8ff; 
     text-align: center;
     
 }
@@ -223,7 +223,7 @@ nav .menu-desktop  ul li:hover{
 }
 #differentials{
     min-height: var(--altura-pagina);
-    background-color: #333;
+    background-color: #0f3764;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -231,20 +231,180 @@ nav .menu-desktop  ul li:hover{
 }
 #bussness-model{
     min-height:  var(--altura-pagina);
-    background-color: #5d5f8a;
+    background-color: #d4e8ff;
     display: flex;
     justify-content: center;
     text-align: center;
     padding:25px 0;
+}
+.bussness-model-name{
+    font-size: 30px;
+    font-weight: bolder;
 }
 #roadmap{
     min-height:  var(--altura-pagina);
-    background-color: #f4f7f6;
+    
+    background-color: #2a6fbd;;
     display: flex;
     justify-content: center;
     text-align: center;
     padding:25px 0;
 }
+.section-content-roadmap {
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    display: flex;
+    align-items: stretch; /* Alinha a altura dos cards */
+    justify-content: center; /* Centraliza os cards */
+    flex-wrap: wrap;
+}
+.section-content-roadmap .roadmap-square{
+    flex:1;
+    width: 100%;
+    min-width: 250px;
+    min-height: 300px;
+    height: 100%;
+    background-color: #ffffff;
+    
+    
+    border-radius: 25px;
+    display: flex;
+    justify-content: start;
+    padding: 15px;
+     flex-direction: column;
+     align-items: center;
+     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+     margin-top: 40px;
+}
+.section-content-roadmap .roadmap-square:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.12); 
+}
+.section-content-roadmap .roadmap-square .roadmap-picture{
+    width: 110px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    border-radius: 2000px;
+    background-color: rgb(240, 239, 239);
+    margin-top: -55px;
+}
+.section-content-roadmap .roadmap-square .roadmap-picture img{
+    width: 50%;
+    
+    
+    
+}
+.section-content-roadmap .roadmap-square .roadmap-name{
+    font-weight: 900;
+    font-size: 19px;
+    margin-top: 5px;
+    
+}
+.section-content-roadmap .roadmap-square  .roadmap-label{
+    font-weight: 300;
+    font-size: 14px;
+    color: #676767;
+    margin-bottom: 6px;
+}
+.section-content-roadmap .roadmap-square  .roadmap-description{
+    font-size: 15px;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-content-roadmap .roadmap-square  .roadmap-description ul {
+    padding-left: 0;
+    padding: 0px 20px;
+}
+
+
+/* Roundmap */
+#team{
+    min-height:  var(--altura-pagina);
+    
+    background-color: #d4e8ff;;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding:25px 0;
+}
+.section-content-team{
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.section-content-team .people-square{
+    flex:1;
+    width: 100%;
+    min-width: 250px;
+    min-height: 352px;
+    height: 100%;
+    background-color: #ffffff;
+    
+    
+    border-radius: 25px;
+    display: flex;
+    justify-content: start;
+    padding: 15px;
+     flex-direction: column;
+     align-items: center;
+     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+     margin-top: 40px;
+}
+.section-content-team .people-square:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.12); 
+}
+.section-content-team .people-square .people-picture{
+    width: 110px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    border-radius: 2000px;
+    background-color: rgb(99, 83, 83);
+    margin-top: -55px;
+    overflow: hidden;
+}
+.section-content-team .people-square .people-picture img{
+    width: 100%;
+    border-radius: 100px;
+
+    
+    
+    
+    
+}
+.section-content-team .people-square .people-name{
+    font-weight: 900;
+    font-size: 19px;
+    margin-top: 5px;
+    
+}
+.section-content-team .people-square  .people-label{
+    font-weight: 300;
+    font-size: 14px;
+    color: #676767;
+    margin-bottom: 6px;
+}
+.section-content-team .people-square  .people-description{
+    font-size: 15px;
+    text-align: justify;
+} 
+
 #contact{
     
     min-height:  var(--altura-pagina);
@@ -255,6 +415,36 @@ nav .menu-desktop  ul li:hover{
     padding:25px 0;
 
 }
+
+
+#contact .contacts{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+#contact .contact-address{
+   display: flex;
+   justify-content: center ;
+   flex-direction: column;
+   align-items: start;
+   margin-top: 10px;
+}
+#contact .contact-address .contact-index {
+    display: flex;
+    justify-content: start;
+    align-items:center ;
+    font-weight: 700;
+    
+    
+}
+#contact .contact-address .contact-index img{
+    height: 15px;
+    margin-right:4px ;
+}
+
+
+
 
 header.scrolled {
     background-color: #ffffff;
