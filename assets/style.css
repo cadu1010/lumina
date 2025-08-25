@@ -244,7 +244,7 @@ nav .menu-desktop  ul li:hover{
 #roadmap{
     min-height:  var(--altura-pagina);
     
-    background-color: #2a6fbd;;
+    background-color: #0f3764;
     display: flex;
     justify-content: center;
     text-align: center;
