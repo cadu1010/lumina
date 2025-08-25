@@ -42,9 +42,9 @@ window.addEventListener('scroll', function() {
     const logoImg = document.getElementById('logo-img');
     if (window.scrollY > 50) {
         header.classList.add('scrolled');
-        logoImg.src = 'assets/image/Logo-Escura.png'; 
+        
     } else {
         header.classList.remove('scrolled');
-        logoImg.src = 'assets/image/Logo-Clara.png'; 
+        
     }
 });
